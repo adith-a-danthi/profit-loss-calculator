@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" type="text/css" href="./style.css" />
+		<title>Profit Loss Calculator</title>
+	</head>
+	<body>
+		<main class="card">
+            <h1 class="title">Profit Loss Calculator</h1>
+			<form class="form" id="form">
+				<label for="initial-price" class="label">
+					Initial Price:
+					<input
+						class="input"
+						type="number"
+						id="initial-price"
+						min="0"
+						step="0.01"
+						placeholder="Enter the Initial Price"
+                        required
+					/>
+				</label>
+				<label for="stock-quantity" class="label">
+					Stocks Quantity:
+					<input
+						class="input"
+						type="number"
+						id="stock-quantity"
+						min="0"
+						step="1"
+						placeholder="Enter the number of stocks bought"
+                        required
+					/>
+				</label>
+				<label for="current-price" class="label">
+					Current Price:
+					<input
+						class="input"
+						type="number"
+						id="current-price"
+						min="0"
+						step="0.01"
+						placeholder="Enter the Current Price"
+                        required
+					/>
+				</label>
+				<button id="submit-btn" type="submit" class="button">Check</button>
+				<div id="result-box"></div>
+			</form>
+		</main>
+	</body>
+</html>
